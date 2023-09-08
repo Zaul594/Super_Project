@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: super_project:latest
+    ports:
+      - "8080:8080"
+    restart: allways 
+    networks:
+      - web
+
+networks:
+  web:
+    
