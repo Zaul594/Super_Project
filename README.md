@@ -4,3 +4,24 @@
 ### not the .env file was removed for security reasons 
 
 ## Contributing
+
+### Clone the repo
+
+```bash
+git clone https://github.com/xyz/zipzod@latest
+cd  Super_Project
+```
+
+### Build the project
+
+```bash
+go build
+```
+
+### Run the project
+
+```bash
+./Super_Project
+```
+
+
