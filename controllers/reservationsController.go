@@ -16,7 +16,10 @@ func CreateReservations(c *gin.Context) {
 	c.Bind(&reservations)
 
 	//Create a reservation
-	reservation := models.Reservation{Name: reservations.Name, Type: reservations.Type}
+	reservation := models.Reservation{
+		Name: reservations.Name,
+		Type: reservations.Type,
+	}
 	result := initializers.DB.Create(&reservation)
 
 	if result.Error != nil {
